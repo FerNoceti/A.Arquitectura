@@ -5,66 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
+    <link rel="shortcut icon" href="../images/LOGOS/isoLOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/521fcec492.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
 </head>
-<body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="../index.html" class="header__a">Inicio</a></li>
-                <li class="header__item"><a href="quienes-somos.html" class="header__a">Quienes somos?</a></li>
-                <li><a href="../index.html" class="header__a"><img class="header__img" src="../images/isoLOGO.png" alt="Inicio"></a></li>
-                <li class="header__item"><a href="obras.html" class="header__a">Obras</a></li>
-                <li class="header__item"><a href="contacto.html" class="header__a">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="proyectos">
-        <h1 class="titulo__subpagina">Proyectos</h1>
-        <section class="proyectos">
-            <div class="proyectos__contenedorTxt">
-                <h2 class="proyectos__nombre">Nombre del proyecto</h2>
-                <p class="proyectos__descripcion">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam accusamus temporibus quod sapiente ea autem labore quisquam tempore totam nisi ratione, distinctio repellendus dolor cumque non sunt laudantium maiores.
-                </p>
-            </div>
-            <div class="proyectos__contenedorImg">
-                <img class="proyectos__img" src="../images/proyectos/proyecto1.jpg" alt="proyecto">
-            </div>
-        </section>
-        <section class="proyectos">
-            <div class="proyectos__contenedorImg">
-                <img class="obras__img" src="../images/proyectos/proyecto2.jpg" alt="proyecto">
-            </div>
-            <div class="proyectos__contenedorTxt">
-                <h2 class="proyectos__nombre">Nombre del proyecto</h2>
-                <p class="proyectos__descripcion">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam accusamus temporibus quod sapiente ea autem labore quisquam tempore totam nisi ratione, distinctio repellendus dolor cumque non sunt laudantium maiores.
-                </p>
-            </div>
-        </section>
-        <section class="proyectos">
-            <div class="proyectos__contenedorTxt">
-                <h2 class="proyectos__nombre">Nombre del proyecto</h2>
-                <p class="proyectos__descripcion">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam accusamus temporibus quod sapiente ea autem labore quisquam tempore totam nisi ratione, distinctio repellendus dolor cumque non sunt laudantium maiores.    
-                </p>
-            </div>
-            <div class="proyectos__contenedorImg">
-                <img class="proyectos__img" src="../images/proyectos/proyecto3.jpg" alt="proyecto">
-            </div>
-        </section>
-        <section class="proyectos">
-            <div class="proyectos__contenedorImg">
-                <img class="obras__img" src="../images/proyectos/proyecto4.jpg" alt="proyecto">
-            </div>
-            <div class="proyectos__contenedorTxt">
-                <h2 class="proyectos__nombre">Nombre del proyecto</h2>
-                <p class="proyectos__descripcion">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aliquam accusamus temporibus quod sapiente ea autem labore quisquam tempore totam nisi ratione, distinctio repellendus dolor cumque non sunt laudantium maiores.
-                </p>
-            </div>
-        </section>
-    </main>
+<body class="body">
+    <div class="container__grid">
+        <div class="container__header">
+            <header class="header">
+                <nav class="nav">
+                    <a href="#" class="logo">Proyectos</a>
+                    <button class="nav__toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav__menu nav__menu--visible">
+                        <li class="nav__menu__item"><a href="../index.html" class="nav__menu__link">Inicio</a></li>
+                        <li class="nav__menu__item"><a href="./quienes-somos.html" class="nav__menu__link">Quienes somos</a></li>
+                        <li class="nav__menu__item"><a href="./proyectos.html" class="nav__menu__link active">Proyectos</a></li>
+                        <li class="nav__menu__item"><a href="./obras.html" class="nav__menu__link">Obras</a></li>
+                        <li class="nav__menu__item"><a href="./contacto.html" class="nav__menu__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
 </body>
 </html>

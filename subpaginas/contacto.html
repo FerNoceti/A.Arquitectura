@@ -5,51 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="shortcut icon" href="../images/LOGOS/isoLOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/521fcec492.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
 </head>
-<body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="../index.html" class="header__a">Inicio</a></li>
-                <li class="header__item"><a href="quienes-somos.html" class="header__a">Quienes somos?</a></li>
-                <li><a href="../index.html" class="header__a"><img class="header__img" src="../images/isoLOGO.png" alt="Inicio"></a></li>
-                <li class="header__item"><a href="proyectos.html" class="header__a">Proyectos</a></li>
-                <li class="header__item"><a href="obras.html" class="header__a">Obras</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 class="titulo__subpagina">Contacto</h1>
-    <section class="contacto">
-        <div class="contacto__contenedor">
-            <p class="contacto__descripcion">Contactanos mediante: <br>
-                Whatsapp: <a class="contacto__a" href="https://wa.me/5493816360997" target="_blank">+5493816360997</a><br>
-                Mail: nicov1278@gmail.com <br>
-                Instagram: <a class="contacto__a" href="https://www.instagram.com/a.arquitecturatuc/?hl=es-la" target="_blank">@a.arquitecturatuc</a>           
-            </p>
+<body class="body">
+    <div class="container__grid-quienesSomos">
+        <div class="container__header">
+            <header class="header">
+                <nav class="nav">
+                    <a href="#" class="logo">Contacto</a>
+                    <button class="nav__toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav__menu nav__menu--visible">
+                        <li class="nav__menu__item"><a href="../index.html" class="nav__menu__link">Inicio</a></li>
+                        <li class="nav__menu__item"><a href="./quienes-somos.html" class="nav__menu__link">Quienes somos</a></li>
+                        <li class="nav__menu__item"><a href="./proyectos.html" class="nav__menu__link">Proyectos</a></li>
+                        <li class="nav__menu__item"><a href="./obras.html" class="nav__menu__link">Obras</a></li>
+                        <li class="nav__menu__item"><a href="./contacto.html" class="nav__menu__link active">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-         <div class="contacto__contenedor">
-             <form action="" class="contacto__form">
-                 <fieldset class="contacto__fieldset">
-                    <legend class="contacto__legend">Dejanos tu mensaje y te contactamos</legend>
-                    <label class="contacto__label" for="user-name">Nombre:</label>
-                    <input class="contacto__input" type="text" name="user-name" placeholder="Ingrese su nombre">
-                    <label class="contacto__label" for="user-surname">Apellido:</label>
-                    <input class="contacto__input" type="text" name="user-surname" placeholder="Ingrese su apellido">
-                    <br>
-                    <label class="contacto__label" for="mail">Mail:</label>
-                    <input class="contacto__input" type="text" name="user-mail" placeholder="Ingrese su mail">
-                    <br><br>
-                    <label class="contacto__label" for="message">Dejanos tu mensaje</label>
-                    <br>
-                    <textarea class="contacto__msj" name="user-message" id="message"></textarea>
-                    <br>
-                    <div class="contacto__btnContenedor"><input class="contacto__btn" type="submit" value="Enviar"></div>
-                </fieldset>
-             </form>
-         </div>      
-    </section>
-    </main>
+        <div class="container__persona1"></div>
+        <div class="container__persona2"></div>
+        <div class="container__footer"></div>
+    </div>
 </body>
 </html>

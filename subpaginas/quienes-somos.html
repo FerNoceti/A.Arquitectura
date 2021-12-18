@@ -5,56 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes somos</title>
+    <link rel="shortcut icon" href="../images/LOGOS/isoLOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/521fcec492.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
 </head>
-<body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="../index.html" class="header__a">Inicio</a></li>
-                <li class="header__item"><a href="proyectos.html" class="header__a">Proyectos</a></li>
-                <li><a href="../index.html" class="header__a"><img class="header__img" src="../images/isoLOGO.png" alt="Inicio"></a></li>
-                <li class="header__item"><a href="obras.html" class="header__a">Obras</a></li>
-                <li class="header__item"><a href="contacto.html" class="header__a">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="quienesSomos">
-        <h1 class="titulo__subpagina">Quienes somos?</h1>
-        <section class="presentacion">
-            <div class="presentacion__contenedor">
-                <img class="presentacion__imagen" src="../images/quienesSomos/default_profile.png" alt="Nicolas">
-                <h2 class="presentacion__nombre">Nicolas</h2>
-                <h3 class="presentacion__arquitecto">Arquitecto</h3>
-                <p class="presentacion__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, dolor!</p>
+<body class="body">
+    <div class="container__grid-quienesSomos">
+        <div class="container__header">
+            <header class="header">
+                <nav class="nav">
+                    <a href="#" class="logo">Quienes somos?</a>
+                    <button class="nav__toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav__menu nav__menu--visible">
+                        <li class="nav__menu__item"><a href="../index.html" class="nav__menu__link">Inicio</a></li>
+                        <li class="nav__menu__item"><a href="./quienes-somos.html" class="nav__menu__link active">Quienes somos</a></li>
+                        <li class="nav__menu__item"><a href="./proyectos.html" class="nav__menu__link">Proyectos</a></li>
+                        <li class="nav__menu__item"><a href="./obras.html" class="nav__menu__link">Obras</a></li>
+                        <li class="nav__menu__item"><a href="./contacto.html" class="nav__menu__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="container__persona1">
+            <div class="persona">
+                <div class="persona__foto">
+                    <img class="persona__foto-img " src="../images/QUIENES SOMOS/nicolas.png" alt="Nicolas">
+                </div>
+                <div class="persona__nombre">
+                    Nicolas
+                </div>
+                <div class="persona__descripcion">
+                    Arquitecto
+                </div>
             </div>
-            <div class="presentacion__contenedor">
-                <img class="presentacion__imagen" src="../images/quienesSomos/default_profile.png" alt="Pedro">
-                <h2 class="presentacion__nombre">Pedro</h2>
-                <h3 class="presentacion__arquitecto">Arquitecto</h3>
-                <p class="presentacion__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, dolor!</p>
+        </div>
+        <div class="container__persona2">
+            <div class="persona">
+                <div class="persona__foto">
+                    <img class="persona__foto-img" src="../images/QUIENES SOMOS/alejandra.png" alt="Alejandra">
+                </div>
+                <div class="persona__nombre">
+                    Alejandra
+                </div>
+                <div class="persona__descripcion">
+                    Arquitecta
+                </div>
             </div>
-        </section>
-        <hr class="separador">
-        <section class="estudio">
-            <div class="estudio__contenedor">
-                <img class="estudio__imagen" src="../images/quienesSomos/estudio.jpg" alt="Estudio">
-            </div>
-            <div class="estudio__contenedor">
-                <h2 class="estudio__titulo">Nuestro estudio</h2>
-                <p class="estudio__descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, repellendus. A aspernatur ab doloribus natus dicta beatae labore consequuntur voluptatem commodi eos eius distinctio culpa dolorum soluta, atque quae odit?mapadolor sit,us dolore voluptate obcaecati eaque omnis dolores, dolorum impedit incidunt cum exercitationem accusantium, ut autem asperiores non ipsum pariatur delectus inventore. Doloremque perspiciatis veniam repudiandae dolor a, eum officiis soluta quam quisquam. Nemo officiis placeat enim, consequuntur ex odio.</p>
-        </section>
-        <hr class="separador">
-        <section class="mapa">
-            <div class="mapa__contenedor">
-                <h2 class="mapa__titulo">Visita nuestro estudio</h2>
-                <p class="mapa__descripcion">Encontranos en Avda. XXXXXXX 121 <br> De Lunes a Viernes de 9hs. a 16hs. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam illum nisi enim nesciunt? Consequuntur voluptates itaque, aspernatur explicabo officia sunt mollitia at quaerat! Distinctio sequi itaque assumenda autem possimus.</p>
-            </div>            
-            <div class="mapa__contenedor">
-                <iframe class="mapa__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.1894969758773!2d-65.25822958452291!3d-26.802094195056014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d1bdf8cc64d%3A0x7fd8fc7a6f0463a8!2sEsteban%20Echeverr%C3%ADa%201176%2C%20T4001%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1637360900732!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>           
-            </div>
-            </div>
-        </section>
-    </main>
+        </div>
+        <div class="container__descripcion">
+            <p class="descripcion__parrafo">
+                Somos un estudio de arquitectura apasionado por nuestro trabajo, el diseño y la construcción. Nuestro equipo cumple 10 años trabajando en conjunto, haciendo centro en las personas y en su experiencia al habitar espacios de calidad.
+Lo cualitativo, las tensiones espaciales, la proporción y la materialidad forman parte de nuestra esencia como proyectistas. La honestidad y el compromiso son los valores que definen más de 30 años de quehacer profesional.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
