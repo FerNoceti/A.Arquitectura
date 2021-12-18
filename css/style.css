@@ -28,6 +28,7 @@ $alabaster: rgba(244, 243, 238, 1);
 .body{
     margin-top: 60px;
     padding-bottom: 100px;
+    background-color: black;
 }
 
 .container__grid-index{
