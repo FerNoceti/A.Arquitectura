@@ -373,3 +373,110 @@ $alabaster: rgba(244, 243, 238, 1);
         font-size: 24px;
     }   
 }
+
+/*Contacto*/
+
+.container__grid-contacto{
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header" "form";
+  }
+
+.container__header{grid-area: header;}
+.container__form {grid-area: form;}
+
+.contacto{
+    width: 100%;
+    min-height: 400px;
+    background-image: url("../images/fondos/CONTACTO.jpg");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    padding-top: 50px;
+}
+
+.contacto__form{
+    width: 300px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.contacto__titulo{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contacto__input{
+    border: 0;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin: 20px 0px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contacto__textarea{ 
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#button{
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px){
+    .contacto__form{
+        width: 700px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .contacto{
+        min-width: 1000px;
+        min-height: 800px;
+    }
+    
+    .contacto__titulo{
+        font-size: 40px;
+    }
+    
+    .contacto__input{
+        font-size: 20px;
+    }
+    
+    .contacto__textarea{ 
+       font-size: 20px;
+    }
+    
+    #button{
+        font-size: 20px;
+    }
+    
+}

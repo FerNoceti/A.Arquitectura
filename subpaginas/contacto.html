@@ -11,7 +11,7 @@
     <script defer src="../js/index.js"></script>
 </head>
 <body class="body">
-    <div class="container__grid-quienesSomos">
+    <div class="container__grid-contacto">
         <div class="container__header">
             <header class="header">
                 <nav class="nav">
@@ -29,9 +29,18 @@
                 </nav>
             </header>
         </div>
-        <div class="container__persona1"></div>
-        <div class="container__persona2"></div>
-        <div class="container__footer"></div>
+        <div class="container__form">
+            <div class="contacto">
+                <form action="" class="contacto__form">
+                    <span class="contacto__titulo">Dejanos tu mensaje</span>
+                    <input type="text" class="contacto__input" name="Nombre" placeholder="Nombre">
+                    <input type="text" class="contacto__input" name="Apellido" placeholder="Apellido">
+                    <input type="text" class="contacto__input" name="Telefono" placeholder="Telefono">
+                    <textarea class="contacto__textarea" name="mensaje" placeholder="Escriba aqui su mensaje"></textarea>
+                    <input type="button" value="Enviar" id="button">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
