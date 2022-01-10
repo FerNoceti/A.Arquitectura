@@ -7,12 +7,13 @@
     <title>Obras</title>
     <link rel="shortcut icon" href="../images/LOGOS/isoLOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/521fcec492.js" crossorigin="anonymous"></script>
     <script defer src="../js/index.js"></script>
 </head>
 <body class="body">
-    <div class="container__grid-obras">
+  <div class="container__obras">
         <div class="container__header">
             <header class="header">
                 <nav class="nav">
@@ -30,49 +31,323 @@
                 </nav>
             </header>
         </div>
-        <div class="container__obra">
-            <main class="contenido-principal">
-                <img src="../images/OBRAS/casa TDV1/1.JPG" alt="Casa TDV1.1" class="contenido-principal__imagen">
-                <div class="contenido-principal__contenedor">
-                    <h1 class="contenido-principal__titulo">Casa TDV1</h1>
-                    <p class="contenido-principal__resumen">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a commodo orci. Nulla ipsum ante, auctor a odio id, bibendum accumsan mauris.
-                    </p>
-                    <p class="contenido-principal__resumen">
-                        Fusce malesuada mollis ante, at elementum mi maximus nec. Praesent volutpat, tortor sed condimentum sagittis, mi diam fringilla nibh.
-                    </p>
+        <span class="presentacion">
+          A continuación presentamos nuestras obras:
+        </span>
+        <div class="obra">
+          <span class="obra__titulo">Casa TDV1</span>
+          <div id="carouselControls0" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa TDV1/1.png" alt="casa TDV1 1">
+                  </div>
                 </div>
-            </main>
-            <div class="carousel">
-                <div class="carousel__contenedor">
-                    <button aria-label="Anterior" class="carousel__anterior">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-
-                    <div class="carousel__lista">
-                        <div class="carousel__elemento">
-                            <img class="carousel__imagen" src="../images/OBRAS/casa TDV1/2.JPG" alt="Casa TDV1 2">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__imagen" src="../images/OBRAS/casa TDV1/3.JPG" alt="Casa TDV1 3">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__imagen" src="../images/OBRAS/casa TDV1/4.JPG" alt="Casa TDV1 4">
-                        </div>
-                        <div class="carousel__elemento">
-                            <img class="carousel__imagen" src="../images/OBRAS/casa TDV1/5.JPG" alt="Casa TDV1 5">
-                        </div>
-                    </div>
-
-                    <button aria-label="Siguiente" class="carousel__siguiente">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa TDV1/2.png" alt="casa TDV1 2">
+                  </div>
                 </div>
-                <div class="carousel__indicadores" role="tablist"></div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa TDV1/3.png" alt="casa TDV1 3">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa TDV1/4.png" alt="casa TDV1 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa TDV1/5.png" alt="casa TDV1 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls0" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls0" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script src="../js/obras.js"></script>
+        <div class="obra">
+          <span class="obra__titulo">Casa V2</span>
+          <div id="carouselControls1" class="obra__carousel carousel slide " data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa V2/1.png" alt="casa V2 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa V2/2.png" alt="frente BH 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa V2/3.png" alt="casa V2 3">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa V2/4.png" alt="casa V2 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/casa V2/5.png" alt="casa V2 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+        </div>
+        <div class="obra">
+          <span class="obra__titulo">Frente BH</span>
+          <div id="carouselControls2" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/frente BH/1.png" alt="frente BH 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/frente BH/2.png" alt="frente BH 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/frente BH/3.png" alt="frente BH 3">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/frente BH/4.png" alt="frente BH 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/frente BH/5.png" alt="frente BH 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+        </div>
+        <div class="obra">
+          <span class="obra__titulo">Galeria Bernal</span>
+          <div id="carouselControls3" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/galeria bernal/1.png" alt="galeria bernal 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/galeria bernal/2.png" alt="galeria bernal 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/galeria bernal/3.png" alt="galeria bernal 3">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/galeria bernal/4.png" alt="galeria bernal 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/galeria bernal/5.png" alt="galeria bernal 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+        </div>
+        <div class="obra">
+          <span class="obra__titulo">Interior MJD</span>
+          <div id="carouselControls4" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/interior MJD/1.png" alt="interior MJD 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/interior MJD/2.png" alt="interior MJD 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="obra__imagen" src="../images/OBRAS/interior MJD/3.png" alt="interior MJD 3">
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/interior MJD/4.png" alt="interior MJD 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/interior MJD/5.png" alt="interior MJD 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+        </div>
+        <div class="obra">
+          <span class="obra__titulo">Máximo Joyas -SDE</span>
+          <div id="carouselControls5" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/Máximo Joyas -SDE/1.png" alt="Máximo Joyas -SDE 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/Máximo Joyas -SDE/2.png" alt="Máximo Joyas -SDE 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/Máximo Joyas -SDE/3.png" alt="Máximo Joyas -SDE 3">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/Máximo Joyas -SDE/4.png" alt="Máximo Joyas -SDE 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/Máximo Joyas -SDE/5.png" alt="Máximo Joyas -SDE 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls5" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+            <video class="obra__video" src="../images/OBRAS/Máximo Joyas -SDE/Video horizontal.MOV" controls>
+              Tu navegador no admite el elemento.
+            </video>
+        </div>
+        <div class="obra">
+          <span class="obra__titulo">Remodelacion LO</span>
+          <div id="carouselControls6" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                      <img class="obra__imagen" src="../images/OBRAS/Remodelacion LO/1.png" alt="Remodelacion LO 1">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/Remodelacion LO/2.png" alt="Remodelacion LO 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                      <img class="obra__imagen" src="../images/OBRAS/Remodelacion LO/3.png" alt="Remodelacion LO 3">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                      <img class="obra__imagen" src="../images/OBRAS/Remodelacion LO/4.png" alt="Remodelacion LO 4">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                      <img class="obra__imagen" src="../images/OBRAS/Remodelacion LO/5.png" alt="Remodelacion LO 5">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls6" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls6" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+        </div>
+        <div class="obra">
+          <span class="obra__titulo">Viviendas de Alquiler</span>
+          <div id="carouselControls7" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/viviendas de alquiler/1.png" alt="viviendas de alquiler 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/viviendas de alquiler/2.png" alt="viviendas de alquiler 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img class="obra__imagen" src="../images/OBRAS/viviendas de alquiler/3.png" alt="viviendas de alquiler 3">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls7" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls7" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+        </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
