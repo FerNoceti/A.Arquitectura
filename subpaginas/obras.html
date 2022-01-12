@@ -8,8 +8,10 @@
     <link rel="shortcut icon" href="../images/LOGOS/isoLOGO.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/521fcec492.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="../js/index.js"></script>
 </head>
 <body class="body">
@@ -31,12 +33,12 @@
                 </nav>
             </header>
         </div>
-        <span class="presentacion">
+        <span class="presentacion" data-aos="zoom-in-up">
           A continuación presentamos nuestras obras:
         </span>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Casa TDV1</span>
-          <div id="carouselControls0" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls0" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -74,9 +76,9 @@
               </a>
             </div>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Casa V2</span>
-          <div id="carouselControls1" class="obra__carousel carousel slide " data-interval="false" data-ride="carousel">
+          <div id="carouselControls1" class="carousel slide " data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -114,9 +116,9 @@
               </a>
             </div>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Frente BH</span>
-          <div id="carouselControls2" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls2" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -154,9 +156,9 @@
               </a>
             </div>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Galeria Bernal</span>
-          <div id="carouselControls3" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls3" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -194,9 +196,9 @@
               </a>
             </div>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Interior MJD</span>
-          <div id="carouselControls4" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls4" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -232,9 +234,9 @@
               </a>
             </div>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Máximo Joyas -SDE</span>
-          <div id="carouselControls5" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls5" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -271,13 +273,13 @@
                 <span class="sr-only">Siguiente</span>
               </a>
             </div>
-            <video class="obra__video" src="../images/OBRAS/Máximo Joyas -SDE/Video horizontal.MOV" controls>
+            <video class="obra__video" src="../images/OBRAS/Máximo Joyas -SDE/Video horizontal.MOV" data-aos="zoom-in-up" controls>
               Tu navegador no admite el elemento.
             </video>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Remodelacion LO</span>
-          <div id="carouselControls6" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls6" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
@@ -315,9 +317,9 @@
               </a>
             </div>
         </div>
-        <div class="obra">
+        <div class="obra" data-aos="zoom-in-up">
           <span class="obra__titulo">Viviendas de Alquiler</span>
-          <div id="carouselControls7" class="obra__carousel carousel slide" data-interval="false" data-ride="carousel">
+          <div id="carouselControls7" class="carousel slide" data-interval="false" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="d-flex justify-content-center">
@@ -346,6 +348,9 @@
             </div>
         </div>
   </div>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
