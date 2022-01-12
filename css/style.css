@@ -203,10 +203,12 @@ ul.nav__menu a:hover {
     display: flex;
     flex-direction: row; } }
 
+/*mixins M is for mobile T is for Tablet and D is por Desktop*/
+/*titulos*/
+/*Descripciones*/
 /*Quienes Somos*/
 .container__grid-quienesSomos {
   display: grid;
-  color: white;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "header" "persona1" "persona2" "descripcion"; }
@@ -237,38 +239,50 @@ ul.nav__menu a:hover {
   border-bottom: solid 1px rgba(255, 255, 255, 0.5); }
 
 .persona__foto {
-  width: 100%; }
+  width: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .persona__foto-img {
-  width: 100%; }
+  width: 90%; }
 
 .persona__nombre {
   font-size: 30px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase; }
 
 .persona__descripcion {
   width: 100%;
   font-size: 25px;
-  padding: 10px 0; }
+  padding: 10px 0;
+  color: white; }
 
 .descripcion__parrafo {
-  padding: 5px 0;
-  background-color: black;
+  width: 320px;
+  color: white;
+  padding: 5px 3px;
   font-size: 16px; }
+
+@media only screen and (min-width: 768px) {
+  .persona__nombre {
+    font-size: 40px; }
+  .descripcion__parrafo {
+    width: 768px;
+    font-size: 25px; }
+  .persona__descripcion {
+    font-size: 30px; } }
 
 @media only screen and (min-width: 1024px) {
   .container__grid-quienesSomos {
-    background-color: black;
-    display: grid;
-    color: white;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: "header header" "persona1 persona2" "descripcion descripcion"; }
   .body {
     margin-top: 80px;
     padding-bottom: 100px;
-    min-height: 100vh;
-    background-color: black; }
+    min-height: 100vh; }
   .persona {
     padding: 0;
     border-bottom: none; }
@@ -282,15 +296,13 @@ ul.nav__menu a:hover {
     max-height: 710px;
     max-width: 500px; }
   .persona__nombre {
-    font-size: 33px;
-    font-weight: bold; }
+    font-size: 50px; }
   .persona__descripcion {
-    width: 100%;
-    font-size: 30px;
-    padding: 12px 0; }
+    font-size: 35px; }
   .descripcion__parrafo {
-    padding: 10px 5px;
-    font-size: 24px; } }
+    width: 1024px;
+    font-size: 30px;
+    padding: 12px 3px; } }
 
 /*Contacto*/
 .container__grid-contacto {
@@ -370,18 +382,14 @@ ul.nav__menu a:hover {
   #button {
     font-size: 20px; } }
 
+/*mixins M is for mobile T is for Tablet and D is por Desktop*/
+/*titulos*/
+/*Descripciones*/
 /*Obras*/
 .container__obras {
   color: white;
   display: flex;
   flex-direction: column; }
-
-.presentacion {
-  font-size: 25px;
-  font-weight: 550;
-  display: flex;
-  justify-content: center;
-  margin-left: 5px; }
 
 .obra {
   display: flex;
@@ -389,13 +397,11 @@ ul.nav__menu a:hover {
   align-items: center;
   justify-content: center; }
 
-.obra__carousel {
-  width: 320px;
-  height: 250px; }
-
 .obra__titulo {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
   text-transform: uppercase; }
 
 .obra__imagen {
@@ -405,15 +411,6 @@ ul.nav__menu a:hover {
 .obra__video {
   height: 200px;
   width: 320px; }
-
-.carousel-item {
-  height: 100vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
 
 .text_part {
   display: none; }
@@ -425,16 +422,10 @@ ul.nav__menu a:hover {
     display: none; } }
 
 @media only screen and (min-width: 768px) {
-  .presentacion {
-    font-size: 30px;
-    margin-left: 7px; }
   .obra {
     margin: 7px 0; }
-  .obra__carousel {
-    width: 768px;
-    height: 480px; }
   .obra__titulo {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 5px; }
   .obra__imagen {
     height: 480px;
@@ -444,16 +435,126 @@ ul.nav__menu a:hover {
     width: 768px; } }
 
 @media only screen and (min-width: 1024px) {
-  .presentacion {
-    font-size: 35px; }
-  .obra__carousel {
-    width: 1024px;
-    height: 640px; }
   .obra__titulo {
-    font-size: 35px; }
+    font-size: 50px; }
   .obra__imagen {
     height: 576px;
     width: 922px; }
   .obra__video {
     height: 576px;
     width: 922px; } }
+
+/*mixins M is for mobile T is for Tablet and D is por Desktop*/
+/*titulos*/
+/*Descripciones*/
+/*Proyectos*/
+.container__proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px; }
+
+.proyecto__titulo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase; }
+
+.proyecto__subtitulo {
+  color: #fff;
+  font-size: 25px;
+  padding: 4px 0; }
+
+.proyecto__descripcion {
+  width: 320px;
+  color: white;
+  padding: 5px 3px;
+  font-size: 16px; }
+
+.proyecto__imagen {
+  width: 300px;
+  margin: 7px 0;
+  border: none;
+  border-radius: 30px; }
+
+.proyecto__video {
+  width: 300px;
+  height: 200px; }
+
+@media only screen and (min-width: 768px) {
+  .proyecto__imagen {
+    width: 750px; }
+  .proyecto__video {
+    width: 750px;
+    height: 480px; }
+  .proyecto__titulo {
+    font-size: 40px; }
+  .proyecto__subtitulo {
+    font-size: 35px; }
+  .proyecto__descripcion {
+    width: 768px;
+    font-size: 25px; } }
+
+@media only screen and (min-width: 1024px) {
+  .proyecto__imagen {
+    width: 1000px; }
+  .proyecto__video {
+    width: 1000px;
+    height: 640px; }
+  .proyecto__titulo {
+    font-size: 50px; }
+  .proyecto__subtitulo {
+    font-size: 45px; }
+  .proyecto__descripcion {
+    width: 1024px;
+    font-size: 30px;
+    padding: 12px 3px; } }
+
+.carousel {
+  width: 320px;
+  height: 250px; }
+
+.carousel img {
+  margin: auto; }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.presentacion {
+  color: white;
+  font-size: 25px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  width: 300px; }
+
+@media only screen and (min-width: 768px) {
+  .carousel {
+    width: 768px;
+    height: 480px; }
+  .presentacion {
+    font-size: 30px;
+    margin-left: 7px;
+    width: 750px; } }
+
+@media only screen and (min-width: 1024px) {
+  .carousel {
+    width: 1024px;
+    height: 640px; }
+  .presentacion {
+    font-size: 35px;
+    width: 1000px; } }

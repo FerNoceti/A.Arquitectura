@@ -1,8 +1,8 @@
+@import "mixin";
 /*Quienes Somos*/
 
 .container__grid-quienesSomos{
     display: grid;
-    color: white;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "header" "persona1" "persona2" "descripcion";
@@ -24,35 +24,47 @@
 }
 
 .persona__foto{
-    width: 100%;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 .persona__foto-img{
-    width: 100%;
+    width: 90%;
 }
 
 .persona__nombre{
-    font-size: 30px;
-    font-weight: bold;
+    @include tituloM;
 }
 
 .persona__descripcion{
     width: 100%;
     font-size: 25px;
     padding: 10px 0;
+    color: white;
 }
 
 .descripcion__parrafo{
-    padding: 5px 0;
-    background-color: black;
-    font-size: 16px;
+    @include descripcionM;
+}
+
+@media only screen and (min-width: 768px) {
+    .persona__nombre{
+        @include tituloT;
+    }
+
+    .descripcion__parrafo{
+        @include descripcionT;
+    }
+
+    .persona__descripcion{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .container__grid-quienesSomos{
-        background-color: black;
-        display: grid;
-        color: white;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
         grid-template-areas: "header header" "persona1 persona2" "descripcion descripcion";
@@ -62,8 +74,7 @@
         margin-top: 80px;
         padding-bottom: 100px;
         min-height: 100vh;
-        background-color: black;
-    }
+        }
         
     .persona{
         padding: 0;
@@ -84,18 +95,14 @@
     }
 
     .persona__nombre{
-        font-size: 33px;
-        font-weight: bold;
+        @include tituloD;
     }
     
     .persona__descripcion{
-        width: 100%;
-        font-size: 30px;
-        padding: 12px 0;
+       font-size: 35px;
     }
     
     .descripcion__parrafo{
-        padding: 10px 5px;
-        font-size: 24px;
+        @include descripcionD;
     }   
 }
