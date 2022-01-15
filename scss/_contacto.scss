@@ -74,7 +74,7 @@ $fuenteD: 20px;
 
 #button{
     border: $border;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $backgroundColor;
     border-radius: $borderRadius;
     width: $maxAncho;
     padding: 10px 2px;

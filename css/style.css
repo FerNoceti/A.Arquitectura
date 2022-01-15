@@ -38,13 +38,13 @@
 .logo {
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #FFF;
   padding: 0 40px;
   line-height: 80px;
   text-decoration: none; }
 
 .nav__menu__link {
-  color: white;
+  color: #FFF;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 3px; }
@@ -259,7 +259,7 @@ ul.nav__menu a:hover {
 .persona__nombre {
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #FFF;
   text-transform: uppercase; }
 
 .persona__descripcion {
@@ -268,11 +268,11 @@ ul.nav__menu a:hover {
   width: 100%;
   font-size: 25px;
   padding: 10px 0;
-  color: white; }
+  color: #FFF; }
 
 .descripcion__parrafo {
   width: 320px;
-  color: white;
+  color: #FFF;
   padding: 5px 3px;
   font-size: 16px; }
 
@@ -399,7 +399,7 @@ ul.nav__menu a:hover {
 /*Descripciones*/
 /*Obras*/
 .container__obras {
-  color: white;
+  color: #FFF;
   display: flex;
   flex-direction: column; }
 
@@ -418,7 +418,7 @@ ul.nav__menu a:hover {
 .obra__titulo {
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #FFF;
   text-transform: uppercase;
   text-transform: uppercase; }
 
@@ -482,17 +482,17 @@ ul.nav__menu a:hover {
 .proyecto__titulo {
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #FFF;
   text-transform: uppercase; }
 
 .proyecto__subtitulo {
-  color: #fff;
+  color: #FFF;
   font-size: 25px;
   padding: 4px 0; }
 
 .proyecto__descripcion {
   width: 320px;
-  color: white;
+  color: #FFF;
   padding: 5px 3px;
   font-size: 16px; }
 
