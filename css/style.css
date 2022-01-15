@@ -10,7 +10,11 @@
   box-sizing: border-box;
   font-family: DINPro; }
 
+.body--overflow {
+  overflow: hidden; }
+
 /*Menu*/
+/*Variables*/
 /*Nav menu responsive*/
 .header {
   background-color: #161616;
@@ -112,12 +116,12 @@ ul.nav__menu a:hover {
     color: #cecece; } }
 
 /*Index*/
-/*Grilla index*/
 .body {
   margin-top: 60px;
   padding-bottom: 100px;
-  background-color: black; }
+  background-color: #000; }
 
+/*Grilla index*/
 .container__grid-index {
   display: grid;
   grid-template-columns: 1fr;
@@ -132,7 +136,7 @@ ul.nav__menu a:hover {
   min-height: 620px; }
 
 .hero {
-  background-color: black;
+  background-color: #000;
   display: flex;
   flex-direction: column; }
 
@@ -159,7 +163,7 @@ ul.nav__menu a:hover {
   width: 80%; }
 
 .hero__parrafo {
-  color: rgba(255, 255, 255, 0.5);
+  color: #9b9b9b;
   font-size: 25px;
   text-align: center; }
 
@@ -223,7 +227,10 @@ ul.nav__menu a:hover {
   grid-area: persona2; }
 
 .container__descripcion {
-  grid-area: descripcion; }
+  grid-area: descripcion;
+  display: flex;
+  justify-content: center;
+  text-align: justify; }
 
 .container__separador {
   grid-area: separador; }
@@ -233,6 +240,8 @@ ul.nav__menu a:hover {
 
 .persona {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: black;
   padding: 10px 0;
@@ -254,6 +263,8 @@ ul.nav__menu a:hover {
   text-transform: uppercase; }
 
 .persona__descripcion {
+  display: flex;
+  justify-content: center;
   width: 100%;
   font-size: 25px;
   padding: 10px 0;
@@ -305,8 +316,9 @@ ul.nav__menu a:hover {
     padding: 12px 3px; } }
 
 /*Contacto*/
-.container__grid-contacto {
-  color: white;
+/*Contacto*/
+.container__contacto {
+  color: #FFF;
   display: flex;
   flex-direction: column; }
 
@@ -327,7 +339,7 @@ ul.nav__menu a:hover {
   border-radius: 7px; }
 
 .contacto__titulo {
-  color: black;
+  color: #000;
   text-align: center;
   font-size: 30px;
   margin-bottom: 15px; }
@@ -337,7 +349,7 @@ ul.nav__menu a:hover {
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
-  margin: 20px 0px;
+  margin: 20px 0;
   padding: 7px;
   box-sizing: border-box;
   font-size: 16px; }
@@ -396,6 +408,12 @@ ul.nav__menu a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.obra__presentacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 .obra__titulo {
   font-size: 30px;
@@ -517,6 +535,8 @@ ul.nav__menu a:hover {
     font-size: 30px;
     padding: 12px 3px; } }
 
+/*Carousel y presentacion*/
+/*Variables*/
 .carousel {
   width: 320px;
   height: 250px; }
@@ -534,7 +554,8 @@ ul.nav__menu a:hover {
   background-size: cover; }
 
 .presentacion {
-  color: white;
+  color: #FFF;
+  display: flex;
   font-size: 25px;
   font-weight: 550;
   display: flex;

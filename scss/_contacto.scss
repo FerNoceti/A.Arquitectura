@@ -1,15 +1,30 @@
 /*Contacto*/
+/*Contacto*/
 
-.container__grid-contacto{
-    color: white;
+@import "colores";
+
+//Variables
+
+$maxAncho: 100%;
+
+$border: 0;
+$borderRadius: 7px;
+
+//input & text area usan las mismas variables
+$backgroundColor: rgba(255, 255, 255, 0.5);
+$margin: 20px 0;
+$padding: 7px;
+$fuente: 16px;
+$fuenteD: 20px;
+
+.container__contacto{
+    color: $white;
     display: flex;
     flex-direction: column;
   }
 
-
-
 .contacto{
-    width: 100%;
+    width: $maxAncho;
     min-height: 400px;
     background-image: url("../images/fondos/contacto.jpg");
     background-size: 100vw 100vh;
@@ -23,45 +38,45 @@
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px 20px;
     box-sizing: border-box;
-    border-radius: 7px;
+    border-radius: $borderRadius;
 }
 
 .contacto__titulo{
-    color: black;
+    color: $black;
     text-align: center;
     font-size: 30px;
     margin-bottom: 15px;
 }
 
 .contacto__input{
-    border: 0;
-    border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    margin: 20px 0px;
-    padding: 7px;
+    border: $border;
+    border-radius: $borderRadius;
+    background-color: $backgroundColor;
+    width: $maxAncho;
+    margin: $margin;
+    padding: $padding;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: $fuente;
 }
 
 .contacto__textarea{ 
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 7px;
-    width: 100%;
-    margin: 20px 0;
-    padding: 7px;
+    border: $border;
+    background-color: $backgroundColor;
+    border-radius: $borderRadius;
+    width: $maxAncho;
+    margin: $margin;
+    padding: $padding;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: $fuente;
     min-height: 100px;
     max-height: 200px;
 }
 
 #button{
-    border: 0;
+    border: $border;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 7px;
-    width: 100%;
+    border-radius: $borderRadius;
+    width: $maxAncho;
     padding: 10px 2px;
     font-size: 15px;
     text-transform: uppercase;
@@ -89,15 +104,15 @@
     }
     
     .contacto__input{
-        font-size: 20px;
+        font-size: $fuenteD;
     }
     
     .contacto__textarea{ 
-       font-size: 20px;
+       font-size: $fuenteD;
     }
     
     #button{
-        font-size: 20px;
+        font-size: $fuenteD;
     }
     
 }
