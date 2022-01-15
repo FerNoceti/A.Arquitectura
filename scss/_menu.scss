@@ -1,9 +1,12 @@
 /*Menu*/
 
+/*Variables*/
+$background:#161616;
+
 /*Nav menu responsive*/
 
 .header{
-    background-color: rgb(22, 22, 22);
+    background-color: $background;
     height: 80px;
     position: fixed;
     width: 100%;
