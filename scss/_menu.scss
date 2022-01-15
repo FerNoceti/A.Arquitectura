@@ -1,3 +1,4 @@
+@import "colores";
 /*Menu*/
 
 /*Variables*/
@@ -30,7 +31,7 @@ $background:#161616;
 .logo{
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: $white;
     padding: 0 40px;
     line-height: 80px;
     text-decoration: none;
@@ -38,7 +39,7 @@ $background:#161616;
 
 
 .nav__menu__link{
-    color: white;
+    color: $white;
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 3px;

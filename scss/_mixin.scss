@@ -1,11 +1,12 @@
 /*mixins M is for mobile T is for Tablet and D is por Desktop*/
+@import "colores";
 
 /*titulos*/
 
 @mixin tituloM{
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: $white;
     text-transform: uppercase;
 }
 
@@ -21,7 +22,7 @@
 
 @mixin descripcionM{
     width: 320px;
-    color: white;
+    color: $white;
     padding: 5px 3px;
     font-size: 16px;
 }
