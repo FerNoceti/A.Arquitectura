@@ -71,7 +71,7 @@ ul.nav__menu a:hover {
 }
 
 .nav__toggle{
-    color: white;
+    color: $white;
     background: none;
     border: none;
     font-size: 30px;
@@ -122,7 +122,7 @@ ul.nav__menu a:hover {
     .nav__menu__link{
         &:hover{
             background: none;
-            color: grey;
+            color: $grey;
         }
     }
     

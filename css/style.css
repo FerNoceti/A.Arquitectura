@@ -69,7 +69,7 @@ ul.nav__menu a:hover {
   width: max-content; }
 
 .nav__toggle {
-  color: white;
+  color: #FFF;
   background: none;
   border: none;
   font-size: 30px;
@@ -106,7 +106,7 @@ ul.nav__menu a:hover {
     line-height: 60px; }
   .nav__menu__link:hover {
     background: none;
-    color: grey; }
+    color: #9b9b9b; }
   .nav__menu__item {
     line-height: 70px; }
   .nav__toggle {
@@ -117,28 +117,21 @@ ul.nav__menu a:hover {
 
 /*Index*/
 .body {
-  margin-top: 60px;
-  padding-bottom: 100px;
   background-color: #000; }
 
-/*Grilla index*/
-.container__grid-index {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "header" "hero"; }
-
-.container__header {
-  grid-area: header; }
-
 .container__hero {
-  grid-area: hero;
-  min-height: 620px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 30px; }
 
 .hero {
   background-color: #000;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .hero__contenedorTitulo {
   display: flex;
@@ -146,7 +139,7 @@ ul.nav__menu a:hover {
   flex-direction: column; }
 
 .hero__logo {
-  margin: 20px 0;
+  margin: 20px;
   display: flex;
   justify-content: center;
   height: 100px; }

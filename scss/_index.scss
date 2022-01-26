@@ -3,26 +3,23 @@
 @import "colores";
 
 .body{
-    margin-top: 60px;
-    padding-bottom: 100px;
     background-color: $black;
 }
 
-/*Grilla index*/
-.container__grid-index{
-    display: grid;   
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "header" "hero";
-  }
-
-.container__header{grid-area: header;}
-.container__hero{grid-area: hero; min-height: 620px;}
+.container__hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+}
 
 .hero{
     background-color: $black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__contenedorTitulo{
@@ -32,7 +29,7 @@
 }
 
 .hero__logo{
-    margin: 20px 0;
+    margin: 20px;
     display: flex;
     justify-content: center;
     height: 100px;
