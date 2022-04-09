@@ -128,7 +128,8 @@ ul.nav__menu a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 90px 0; }
 
 .hero__contenedorTitulo {
   display: flex;
