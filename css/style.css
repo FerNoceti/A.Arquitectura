@@ -122,8 +122,7 @@ ul.nav__menu a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin-top: 30px; }
+  height: 100vh; }
 
 .hero {
   background-color: #000;
@@ -149,10 +148,11 @@ ul.nav__menu a:hover {
 .hero__nombre {
   margin: 20px 0;
   display: flex;
-  justify-content: center; }
-
-.hero__nombre-img {
-  width: 80%; }
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #9b9b9b;
+  font-weight: 1000; }
 
 .hero__parrafo {
   color: #9b9b9b;
@@ -182,9 +182,8 @@ ul.nav__menu a:hover {
   .hero__logo {
     height: 250px;
     margin-right: 20px; }
-  .hero__nombre-img {
-    margin: 50px 0;
-    height: 250px; }
+  .hero__nombre {
+    font-size: 5rem; }
   .hero__parrafo {
     font-size: 50px;
     text-align: center; }
