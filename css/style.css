@@ -121,8 +121,7 @@ ul.nav__menu a:hover {
 .container__hero {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh; }
+  align-items: center; }
 
 .hero {
   background-color: #000;
